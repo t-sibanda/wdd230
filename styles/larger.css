@@ -1,0 +1,8 @@
+/* Media Query for Larger Screens */
+@media (min-width: 768px) {
+    @import url('base.css');
+    main {
+      max-width: 800px;
+      margin: 0 auto;  
+    }
+  }
