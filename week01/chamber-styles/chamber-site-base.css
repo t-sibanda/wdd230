@@ -24,7 +24,8 @@ header {
 .flex-container {
     display: flex;
     flex-direction: column; /* Stack elements vertically */
-    align-items: center;  /* Align content horizontally in the center */
+    align-items: center;
+    text-align: center 
   }
   
   .flex-container h1 {
@@ -129,7 +130,7 @@ p {
 footer {
   background-color: #f2f2f2; /* Light grey background */
   padding: 1rem 2rem;
-  text-align: center;
+  text-align: left;
 }
 
 /* Typography */

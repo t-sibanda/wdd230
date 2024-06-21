@@ -72,15 +72,10 @@ main {
     gap: 20px;
   }
 }
-information-section {
-  text-align: center;  /* Center information section content */
-  margin: 20px auto;  
-  justify-content: center;
-}
-
-.information-list {
-  list-style-type: none;  /* Remove default bullets */
-  padding: 0;  
+.content-wrapper {
+  display: flex;
+  flex-direction: column;  /* Stack content vertically */
+  align-items: center;  /* Center content horizontally */
 }
 /* Cards */
 .card {
@@ -90,7 +85,17 @@ information-section {
   margin-bottom: 20px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));  /* Equal width columns */
+  gap: 10px;  /* Add some gap between grid items (optional) */
+}
 
+.information-list {
+  list-style-type: none;  /* Remove default bullets */
+  padding: 0; 
+  text-align: left;
+} 
 .card h2 {
   margin-bottom: 10px;
 }
@@ -98,6 +103,6 @@ information-section {
 /* Footer */
 footer {
   padding: 10px;
-  text-align: center;
+  text-align: left;
   background-color: #f0f0f0; /* Light grey footer background */
 }
