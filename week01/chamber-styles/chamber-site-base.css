@@ -8,29 +8,31 @@ html {
 
 /* Body styles */
 body {
-  background-color: #fff; /* White background */
+  background-color: #e8f0f5; /* Light blue background */
   color: #333; /* Dark grey text */
 }
 
 /* Header styles */
 header {
-  background-color: #2f4f4f; /* Deep blue primary color */
+  background-color: #2e8b57; /* Green primary color */
   color: #fff; /* White text */
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .flex-container {
-    display: flex;
-    flex-direction: column; /* Stack elements vertically */
-    align-items: center;
-    text-align: center 
-  }
-  
-  .flex-container h1 {
-    margin-top: 1rem;  /* Add some space between the logo and text */
-  }
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center;
+  text-align: center;
+}
+
+.flex-container h1 {
+  margin-top: 1rem; /* Add some space between the logo and text */
+}
+
 header h1 {
   font-size: 1rem;
   margin: 0;
@@ -56,8 +58,9 @@ header img {
 
 .address,
 .spaced-paragraph {
-    margin-bottom: 1rem; /* Adjust margin value for desired space */
-  }
+  margin-bottom: 1rem; /* Adjust margin value for desired space */
+}
+
 .hours {
   margin-top: 0.5rem;
   font-size: 0.8rem; /* Smaller text for address and hours */
@@ -65,7 +68,7 @@ header img {
 
 /* Navigation styles */
 nav {
-  background-color: #f2f2f2; /* Light grey background */
+  background-color: #f5f5f5; /* Very light grey background */
   padding: 1rem 2rem;
 }
 
@@ -75,7 +78,39 @@ nav ul {
   padding: 0;
   display: flex;
 }
+/* Responsive Navigation Menu (Hamburger Menu) */
+@media only screen and (max-width: 768px) {
+  nav ul {
+    display: none; /* Hide navigation links initially */
+  }
 
+  .hamburger {
+    display: block; /* Show hamburger menu on smaller screens */
+    cursor: pointer; /* Indicate clickable behavior */
+    padding: 10px;
+    position: relative; /* Needed for hamburger lines */
+  }
+
+  .hamburger:after {
+    content: "\002630"; /* Hamburger menu icon using unicode character */
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px; /* Adjust positioning as needed */
+  }
+
+  nav.active ul {
+    display: flex; /* Show navigation links on click */
+    flex-direction: column; /* Stack links vertically */
+    position: absolute; /* Position the menu within the viewport */
+    top: 100%; /* Position below the header */
+    left: 0; /* Align to left side */
+    width: 100%; /* Full width of the screen */
+    background-color: #f5f5f5; /* Match navigation background color */
+    padding: 1rem;
+  }
+}
 nav li {
   margin-right: 1rem;
 }
@@ -94,14 +129,60 @@ nav a:hover {
 main {
   padding: 2rem;
 }
+.hero {
+  
+  padding: 2rem; /* Adjust padding as needed */
+  text-align: center; /* Center content horizontally */
+}
 
-.mission-statement,
+.hero img {
+  width: 65%; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 1rem; /* Add some space below the image */
+}
+
+.hero p {
+  font-size: 1.2rem; /* Adjust font size as needed */
+  line-height: 1.5; /* Improve readability */
+  color: #333; /* Dark grey text color */
+}
+.cta {
+  text-align: center; /* Center the button horizontally (optional) */
+}
+
+.cta button {
+  background-color: #2e8b57; /* Green color (adjust to your preference) */
+  color: #fff; /* White text */
+  padding: 1rem 2rem; /* Adjust padding as needed */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Indicate clickable behavior */
+  font-weight: bold; /* Bold text (optional) */
+}
+
+.cta button:hover {
+  background-color: #38a16a; /* Darker green on hover (optional) */
+}
+.mission-statement {
+  background-color: transparent; /* Remove unnecessary styles */
+  border: none;
+  padding: 0;
+  margin-bottom: 0;
+}
+
 .grid-container {
-  background-color: #fff; /* White background for content sections */
-  border: 1px solid #ddd; /* Light grey border */
-  border-radius: 5px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
+  grid-gap: 1rem; /* Add spacing between grid items (optional) */
+}
+
+.grid-item {
+  width: auto; /* Set width for each grid item */
   padding: 1rem;
-  margin-bottom: 1rem;
+  margin: 0 1rem 1rem 0; /* Adjust margin for spacing */
+  border: 1px solid #ddd; /* Add border for individual items */
+  border-radius: 5px;
+  background-color: #fff; /* White background for each item */
 }
 
 h2 {
@@ -113,22 +194,14 @@ p {
   line-height: 1.5; /* Adjusting line height for better readability */
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
-  grid-gap: 1rem;
+.grid-image {
+  width: 100%; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
 }
 
-.grid-item {
-  padding: 1rem;
-}
-.grid-image {
-    width: 300px; /* Adjust width as needed */
-    height: auto; /* Maintain aspect ratio */
-  }
 /* Footer styles */
 footer {
-  background-color: #f2f2f2; /* Light grey background */
+  background-color: #e8f0f5; /* Light blue background */
   padding: 1rem 2rem;
   text-align: left;
 }
@@ -137,9 +210,8 @@ footer {
 body {
   font-family: "Open Sans", sans-serif; /* Preferred font */
 }
+
 .smaller-paragraph {
-    font-size: 12px; /* Adjust font size as needed */
+  font-size: 12px; /* Adjust font size as*/
   }
-h1, h2 {
-  font-family: "Roboto", sans-serif; 
-}
+  
