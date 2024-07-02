@@ -1,8 +1,83 @@
 /* Media Query for Larger Screens */
-@media (min-width: 768px) {
-    @import url('base.css');
-    main {
-      max-width: 800px;
-      margin: 0 auto;  
-    }
+@media (min-width: 769px) {
+/* Define base styles for a better starting point */
+body {
+  font-family: sans-serif; /* Set a default font */
+  margin: 0; /* Remove default body margin */
+  padding: 0; /* Remove default body padding */
+}
+
+/* Main container with padding */
+main {
+  min-width: 769px;
+  margin: 0 auto;
+  padding: 2rem; /* Add some padding for content separation */
+  .card {
+    background-color: #e0e0e0; /* Light grey card background */
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));  /* Equal width columns */
+    gap: 10px;  /* Add some gap between grid items (optional) */
+  }
+  section {
+    text-align: center; /* Center content horizontally */
+  }
+  .information-list {
+    list-style-type: none;  /* Remove default bullets */
+    padding: 10px; 
+    text-align: center;
+  } 
+  .card h2 {
+    margin-bottom: 10px;
+  }
+  
+  
+}
+
+/* Center align headings */
+h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+#menu {
+  display: none; /* hide hamburger button */
+}
+
+/* Style the navigation section */
+.navigation {
+  display: flex; /* Activate flexbox for horizontal layout */
+  justify-content: space-between; /* Distribute links evenly */
+}
+
+/* Style navigation links */
+.navigation a {
+  display: inline-block; /* Make links act like inline elements */
+  padding: 5px 5px; /* Add some padding for spacing */
+  text-align: center;
+  margin: 0 auto;
+  text-decoration: none; /* Remove underline */
+  color: #333; /* Set link color (example) */
+}
+
+/* Hover effect for links (optional) */
+.navigation a:hover {
+  background-color: #f5f5f5; /* Light background on hover (example) */
+}
+
+/* Style content within the main container */
+.stuff {
+  margin: 1rem 0; /* Adjust margin for content spacing */
+}
+/* Footer */
+footer {
+  padding: 10px;
+  text-align: center;
+  background-color: #f0f0f0; /* Light grey footer background */
+}
+}
+}
