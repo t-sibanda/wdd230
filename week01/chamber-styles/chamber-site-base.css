@@ -1,5 +1,4 @@
 /* Basic reset styles */
-body,
 html {
   margin: 0;
   padding: 0;
@@ -127,11 +126,11 @@ nav a:hover {
 
 /* Main content styles */
 main {
-  padding: 2rem;
+  padding: 0 auto;
 }
 .hero {
   
-  padding: 2rem; /* Adjust padding as needed */
+  padding: auto; /* Adjust padding as needed */
   text-align: center; /* Center content horizontally */
 }
 

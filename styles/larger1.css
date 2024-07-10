@@ -1,0 +1,117 @@
+body {
+    font-family : "Playfair Display", serif;
+    body {
+        font-family : "Playfair Display", serif;
+        background-color : #d2ebcd;
+        margin : 0;
+        padding : 0;
+        color : #333333;
+        }   
+        }
+    
+    .flex-container {
+    display : flex;
+    flex-direction : column;
+    align-items : center;
+    text-align : center;
+    }
+    .flex-container span {
+    flex : 1;
+    text-align : center;
+    font-weight : bold;
+    font-size : 1.5rem;
+    }
+    .flex-container img {
+    margin-right : 20px;
+    width : 410px;
+    height : auto;
+    }
+    h1, h2, h3, h4, h5, h6 {
+    margin : 1em 0;
+    font-weight : normal;
+    }
+    .wrapper {
+    display : flex;
+    flex-direction : column;
+    min-height : 100vh;
+    }
+    .header {
+    background-color : #91f1ba;
+    padding : 10px 0;
+    display : flex;
+    justify-content : space-between;
+    }
+    
+    nav a {
+    color : #333333;
+    text-decoration : none;
+    padding : 10px 20px;
+    display : inline-block;
+    text-align: center;
+    }
+    @media (min-width: 768px) {
+    nav {
+    flex-direction : column;
+    align-items : center;
+    }
+    #menu {
+    display: none;
+    }
+    
+    
+    .stuff {
+    margin : 0;
+    border : rgb(0, 0, 0, 0.1) solid 1px;
+    background-color : #bed;
+    max-width : 100%;
+    height : 100vh;
+    }
+    }
+    .container {
+    min-width : 768px;
+    margin : 0 auto;
+    padding : 20px;
+    display : grid;
+    grid-template-columns : repeat(auto-fit,minmax(250px,1fr));
+    gap : 20px;
+    }
+    @media (min-width: 768px) {
+    main {
+    display : grid;
+    grid-template-columns : repeat(2,1fr);
+    gap : 20px;
+    }
+    .content-wrapper {
+    display : flex;
+    flex-direction : column;
+    align-items : center;
+    }
+    .card {
+    background-color : #e0e0e0;
+    padding : 20px;
+    border-radius : 5px;
+    margin-bottom : 20px;
+    box-shadow : 0 1px 3px rgb(0, 0, 0, 0.1);
+    }
+    .grid-container {
+    display : grid;
+    grid-template-columns : repeat(auto-fit,minmax(200px,1fr));
+    gap : 10px;
+    }
+    section {
+    text-align : center;
+    }
+    .information-list {
+    list-style-type : none;
+    padding : 0;
+    text-align : center;
+    }
+    .card h2 {
+    margin-bottom : 10px;
+    }
+    footer {
+    padding : 10px;
+    text-align : center;
+    background-color : #f0f0f0;
+    }
+    }
