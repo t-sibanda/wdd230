@@ -11,27 +11,31 @@
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Playwrite+DE+Grund:wght@100..400&display=swap');
       </style>
-    <script src='main.js'></script>
+   
     <meta name="description" content="Runde District Council- Supporting businesses and connecting the community.">
     <meta name="author" content="Terrence Sibanda">
     <link rel="icon" href="images/chamber-favicon.ico">
 </head>
 <body>
-    <header>
-        <img src="images/runde-logo.jpg" alt="Runde RDC Chamber of commerce"> <br>
-        <h1> Runde Chamber of Commerce</h1>
-        
-      </header>
-    <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Members</a></li>
-          <li><a href="#">Events</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-
+  <header>
+    <img src="images/runde-logo.jpg" alt="Runde RDC Chamber of commerce"> <br>
+    <h1> Runde Chamber of Commerce</h1>
+</header>
+<nav class="navbar__container">
+    <ul class="navbar__menu">
+        <li class="navbar__item"><a href="#" class="navbar__links">Home</a></li>
+        <li class="navbar__item"><a href="#" class="navbar__links">About Us</a></li>
+        <li class="navbar__item"><a href="#" class="navbar__links">Members</a></li>
+        <li class="navbar__item"><a href="#" class="navbar__links">Events</a></li>
+        <li class="navbar__item"><a href="#" class="navbar__links">Contact</a></li>
+    </ul>
+    <div id="mobile-menu" class="navbar__toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+</nav>
+    <main>
       <section class="hero-image">
         <picture>
             <source srcset="images/zvishavane-hero small.webp" media="(max-width: 400px)">
@@ -41,10 +45,10 @@
         <div class="hero-overlay">
           <p>Connecting businesses, supporting growth, and advocating for our community.</p>
           <a href="#" class="hero-cta">Join the Chamber Now!</a>
-          
-        </div>
+      
+         </div>
     </section>
-   
+   <script src="scripts/menu.js"></script>
     <div class="midblock">
       <section class="events">
         <h2>Upcoming Events</h2>
@@ -61,28 +65,31 @@
       </section>
 
     </div>
-  
-    <section class="spotlights">
-        <h2>Company Spotlights</h2>
-        <article class="spotlight">
-          <img src="images/runde-rdc.png" alt="Company Logo 1">
+    <h2>Company On The Spotlight</h2>
+    <div class="spotlights">
+      
+        <div class="spotlight-runde">
           <h3>Council to celebrate one of their founding fathers</h3>
+          <img src="images/runde-rdc.png" alt="Company Logo 1">
+          
           <p>From one donated vehicle to a plethora of road equipment and from nagging salary backlogs to fixed pay days, Runde Rural District Council Executive Officer for Finance (Finance Director) Tarirayi Sibanda obviously looks back with a great sense of achievement. He retired on February 6 2022, at the age of 55.</p>
-        </article>
-        <article class="spotlight">
+        </div>
+        <div class="spotlight-mimosa">
+          <h3>Mimosa Mining Company</h3>
             <img src="images/mimosa-logo.png" alt="Company Logo 2">
-            <h3>Mimosa Mining Company</h3>
+           
             <p>Not just mining, we are building relations and the community.
                 <li><a href="#">Learn more...</a></li>
             </p>          
-        </article>
-        <article class="spotlight">
-            <img src="images/zvishavane-farming.jpg" alt="Company Logo 1">
+        </div>
+        <div class="spotlight">
           <h3>Farmers have their say</h3>
+            <img src="images/zvishavane-farming.jpg" alt="Company Logo 1">
+          
           <p>Commercial farmers praise the role of the council in the impelementation of irrigation schemes in the drought striken southern region</p>
-          </article>
-      </section>
-
+        </div>
+        </div>
+      </main>
     <footer>
         <p>Contact us: (574) 302-6079 | info@rrdcchamber.com</p>
         <p>Developed by: Terrence Sibanda | WDD 230 Project | Last Modified: <span id="last-modified"></span></p>

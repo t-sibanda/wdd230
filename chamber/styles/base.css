@@ -14,35 +14,155 @@ body {
 
   }
   
-  header {
-    padding: 20px 0;
-    background-color: #f0f0f0;
-    padding: 10px;
+  .header {
+    position: relative;
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+    background-color: #4527a0;
+    transition: 0.3s;
   }
-  .header h1{
+  .logo h1{
     padding: 20px;
+    display: block;
   }
-  nav {
-    background-color: #e0e0e0;
+  .logo img{
+    display: block;
   }
-  
-  nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  /* CSS for the navigation bar and hamburger menu */
+  .navbar {
+    background: #a3b18a;
+    height: 80px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+.navbar__container {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 90%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 10px;
+    text-transform: uppercase;
+}
+.navbar__menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.navbar__item {
+  height: 80px;
+}
+.navbar__links {
+  color: #344e41;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 125px;
+  text-decoration: none;
+  height: 100%;
+  transition: all 0.3s ease;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+}
+
+.navbar__links:hover {
+  color: #dad7cd;
+  scale: 105%;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+  .navbar__container {
+      display: flex;
+      justify-content: space-between;
+      height: 80px;
+      z-index: 1;
+      width: 90%;
+      max-width: 1300px;
+      padding: 0;
+      margin: 0 auto;
   }
-  
-  nav li {
-    display: inline-block;
-    margin: 0 10px;
+
+  .navbar__menu {
+      display: grid;
+      grid-template-columns: auto;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      width: 50%;
+      position: absolute;
+      top: 120%;
+      right: -100%;
+      opacity: 0;
+      transition: all 0.5s ease;
+      z-index: -1;
+      border: 3px solid #1e2e26;
+      border-radius: 25px;
+      background: #dad7cd;
+      height: 60vh;
+      font-size: 1.2rem;
   }
-  
-  nav a {
-    text-decoration: none;
-    color: #333;
-    padding: 10px;
+
+  .navbar__menu.active {
+      right: 25%;
+      opacity: 1;
+      z-index: 99;
   }
-  
+
+  .navbar__toggle .bar {
+      width: 25px;
+      height: 3px;
+      margin: 5px auto;
+      transition: all 0.3s ease;
+      background: #344e41;
+  }
+
+  .navbar__item {
+      width: 100%;
+  }
+
+  .navbar__links {
+      text-align: center;
+      padding-top: 1rem;
+      color: #344e41;
+  }
+
+  .navbar__links:hover {
+      color: #588157;
+      transition: all 0.3s ease;
+  }
+
+  #mobile-menu {
+      position: absolute;
+      top: 20%;
+      right: 5%;
+      transform: translate(5%, 20%);
+      cursor: pointer;
+  }
+
+  #mobile-menu.is-active .bar:nth-child(2) {
+      opacity: 0;
+  }
+
+  #mobile-menu.is-active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+  }
+
+  #mobile-menu.is-active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+  }
+}
   main {
     padding: 20px;
   }
@@ -114,6 +234,11 @@ body {
   }
   .midblock{
     display:inline-block;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    background-color: aliceblue;
+    width: 100%;
   }
   .events{
     height: 200px;
@@ -130,6 +255,7 @@ body {
   }
   
   .spotlights {
+    background-color:aquamarine;
     margin: 0 auto;
     width: 70%;
     display: flex;
@@ -152,9 +278,17 @@ body {
   
   /* Media Queries (adjust as needed) */
   
-  @media (max-width: 780px) {
+  @media (max-width: 900px) {
     .spotlights article {
       width: 75%; /* Adjust for two columns on smaller screens */
     }
   }
-  
+  @media (max-width: 600px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .main {
+        grid-template-columns: 1fr;
+    }
+}
