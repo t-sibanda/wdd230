@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terrence Sibanda - WDD 230 - Web Frontend Development</title>
+  <meta name="description" content="This webpage serves as the course assignment portal for Terrence Sibanda's WDD 230 - Web Frontend Development course.">
+  <meta name="author" content="Terrence Sibanda">
+  <link rel="stylesheet" href="styles/form.css">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="linkedin" href="https://www.linkedin.com/in/tsibanda">
+  <link rel="Zvishavane my home" href="https://www.facebook.com/photo/?fbid=2848363815221118&set=p.2848363815221118">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap">
+     
+</head>
+<body>
+  <header class="flex-container">
+    <img src="images/profile.jpg" alt="Terrence Sibanda profile" width="210" height="150">
+    <span>Terrence Sibanda</span>
+  </header>
+
+  <nav>
+    <button id="menu"></button>
+    <nav class="navigation">
+      <a href="#" title="Home" class="active">Home</a>
+      <a href="#" title="Chamber">Chamber</a>
+      <a href="#" title="Site Plan">Site Plan</a>
+      <a href="#" title="Form">Form</a>
+    </nav>
+    <script src="scripts/menu.js"></script>
+  </nav>
+
+  <main>
+    <h2>Login Form</h2>
+    <form action="record.html" method="get" id="myForm">  <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required pattern="[A-Za-z0-9]{8,}" title="Password must be at least 8 characters long and alphanumeric">
+      </div>
+      <div class="form-group">
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required onkeyup="checkPasswords()">  <span id="passwordError" class="error-message"></span>  </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid BYUI email address">
+      </div>
+      <div class="form-group">
+        <label for="pageRating">Page Rating:</label>
+        <input type="range" id="pageRating" name="pageRating" min="1" max="10" step="1" value="5" oninput="showRatingValue(this.value)">  <span id="ratingValue">5</span>  </div>
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+  <script src="scripts/logIn.js"></script>
+  <footer>
+    <p>© <span id="copyrightYear"></span> Terrence Sibanda, Zimbabwe </p>
+    <p id="lastModified">Last Modified: N/A</p>
+  </footer>
+  <script src="scripts/getDates.js"></script>
+</body>
+</html>

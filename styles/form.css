@@ -1,0 +1,116 @@
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+header {
+    padding: .5rem 2%;
+    background-color: #ddd;
+}
+header h1 {margin: 0;}
+header h2 {margin: 0; font-weight: normal;}
+nav {
+    background-color: #333;
+    padding: 0.5rem 2%;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li {border-bottom: solid 1px #333;}
+nav ul li a {
+    display: block;
+    background-color: #444;
+    color: #eee;
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: center;
+}
+nav ul li.active a {
+    background-color: #000;
+    color: #fff;
+}
+
+
+:root {
+    --font-family: sans-serif;  /* Common font family */
+    --font-size: 16px;  /* Common font size */
+    --primary-color: #333;  /* Primary text color */
+    --error-color: #c00;  /* Error message color */
+  }
+  
+  body {
+    font-size: var(--font-size);
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+  }
+  main {
+    padding: 0 2%;
+    min-height: 20rem;
+}
+
+  .form-group {
+    margin-bottom: 15px;  /* Spacing between form groups */
+  }
+  
+  label {
+    display: block;  /* Labels on separate lines */
+    margin-bottom: 5px;  /* Spacing between label and input */
+    font-weight: bold;
+    color: var(--primary-color);
+  }
+  
+  input,
+  select,
+  textarea {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 100%; 
+    max-width: 400px;
+  }
+  
+  .error-message {
+    color: var(--error-color);
+    font-size: smaller;  /* Slightly smaller error message */
+  }
+  
+  .range-container {
+    display: flex;  /* Align rating label and input horizontally */
+    align-items: center;
+  }
+  .form-group input:required{
+    border-bottom: solid 8px red;
+}
+.form-group input:required:valid{
+    border-bottom: solid 8px green;
+}
+
+  #pageRating {
+    flex: 1;  /* Make rating input take most horizontal space */
+    margin-right: 10px;
+    max-width: 400px;
+  }
+  
+  #ratingValue {
+    font-weight: bold;
+  }
+  
+  button[type="submit"] {
+    background-color: #4CAF50;  /* Green submit button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #45A049;  /* Darker green on hover */
+  }
+  footer{
+    padding: 0 2%;
+    min-height: 20rem;
+  }
+  
