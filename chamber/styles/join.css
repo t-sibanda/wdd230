@@ -1,0 +1,148 @@
+/* General styles */
+body {
+    font-family: 'Hind', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    text-align: center;
+    padding: 1em;
+    background-color: #4CAF50;
+    color: white;
+}
+
+header img {
+    width:100%;
+    max-width: 200px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.navbar__container {
+    margin-top: 1rem;
+    background-color: #333;
+}
+
+.navbar__menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: space-around;
+}
+
+.navbar__item {
+    padding: 1em;
+}
+
+.navbar__links {
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    
+}
+
+.navbar__links:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+#mobile-menu {
+    display: none;
+    cursor: pointer;
+}
+
+#mobile-menu .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: white;
+}
+
+@media (max-width: 768px) {
+    .navbar__menu {
+        display: none;
+        flex-direction: column;
+    }
+
+    .navbar__menu.active {
+        display: flex;
+    }
+
+    #mobile-menu {
+        display: block;
+        padding: 1em;
+    }
+}
+
+.form-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 1em;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+.form-container input,
+.form-container select,
+.form-container textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.membership-benefits {
+    max-width: 300px;
+    margin: auto;
+    padding: 1em;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.membership-benefits ul {
+    list-style: none;
+    padding: 0;
+}
+
+.membership-benefits li {
+    margin-bottom: 0.5em;
+}
+
+@media (min-width: 768px) {
+    main {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .form-container,
+    .membership-benefits {
+        flex: 1;
+        margin: 1em;
+    }
+}
+
+.form-container input:required{
+    border-bottom: solid 8px red;
+}
+.form-container input:required:valid{
+    border-bottom: solid 8px green;
+}
+
+
+
+

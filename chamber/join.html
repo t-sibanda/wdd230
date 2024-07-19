@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Chamber Join Page</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/join.css">
+    <link href="https://fonts.google.com/share?selection.family=Playwrite+DE+Grund:wght@100..400" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Playwrite+DE+Grund:wght@100..400&display=swap');
+    </style>
+    <meta name="description" content="The Chamber Join Page">
+    <meta name="author" content="Terrence Sibanda">
+    <link rel="icon" href="images/chamber-favicon.ico">
+</head>
+<body>
+    <header>
+        <img src="images/runde-logo.jpg" alt="Runde RDC Chamber of commerce"> <br>
+        <h1>Runde Chamber of Commerce</h1>
+    </header>
+    <nav class="navbar__container">
+        <ul class="navbar__menu">
+            <li class="navbar__item"><a href="#" class="navbar__links">Home</a></li>
+            <li class="navbar__item"><a href="#" class="navbar__links">About Us</a></li>
+            <li class="navbar__item"><a href="#" class="navbar__links">Members</a></li>
+            <li class="navbar__item"><a href="#" class="navbar__links">Events</a></li>
+            <li class="navbar__item"><a href="#" class="navbar__links">Contact</a></li>
+        </ul>
+        <div id="mobile-menu" class="navbar__toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+    <main>
+        <div class="form-container">
+            <form method="get" action="thankyou.html">
+                <label for="first-name">First Name:
+                    <input type="text" id="first-name" name="firstName" required>
+                </label>
+                <label for="last-name">Last Name:
+                    <input type="text" id="last-name" name="lastName" required>
+                </label>
+                <label for="title">Title/Position:
+                    <input type="text" id="title" name="title" pattern="[A-Za-z\s\-]{7,}" required>
+                </label>
+                <label for="email">Email:
+                    <input type="email" id="email" name="email" placeholder="example@domain.com" required>
+                </label>
+                <label for="phone">Mobile Phone:
+                    <input type="tel" id="phone" name="phone" required>
+                </label>
+                <label for="organization">Business/Organization Name:
+                    <input type="text" id="organization" name="organization" required>
+                </label>
+                <label for="membership-level">Membership Level:
+                    <select id="membership-level" name="membershipLevel">
+                        <option value="np">NP Membership</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+                </label>
+                <label for="description">Business/Organization Description:
+                    <textarea id="description" name="description"></textarea>
+                </label>
+                <input type="hidden" id="timestamp" name="timestamp" value="">
+                <input type="submit" value="Make Me A Member">
+            </form>
+        </div>
+        <aside class="membership-benefits">
+            <h2>Membership Benefits</h2>
+            <ul>
+                <li>NP Membership: No fee, access to special events.</li>
+                <li>Bronze Membership: Includes NP benefits plus training sessions.</li>
+                <li>Silver Membership: Includes Bronze benefits plus advertising opportunities.</li>
+                <li>Gold Membership: Includes Silver benefits plus event discounts.</li>
+            </ul>
+        </aside>
+    </main>
+    <footer>
+        <p>Contact us: (574) 302-6079 | info@rrdcchamber.com</p>
+        <p>Developed by: Terrence Sibanda | WDD 230 Project | Last Modified: <span id="last-modified"></span></p>
+        <script src="scripts/getDates.js"></script>
+        <script src="scripts/join.js"></script>
+        <script>
+            // Set the timestamp field to the current date and time
+            document.getElementById('timestamp').value = new Date().toISOString();
+        </script>
+    </footer>
+</body>
+</html>
