@@ -1,0 +1,34 @@
+[
+    {
+      "familyName": "Smith",
+      "moveInDate": "2023-11-15",
+      "familySize": 4,
+      "visitedByBishopric": true,
+      "members": [
+        {
+          "name": "John Smith",
+          "gender": "Male",
+          "birthdate": "1990-01-15"
+        },
+        {
+          "name": "Jane Smith",
+          "gender": "Female",
+          "birthdate": "1992-03-20"
+        },
+        {
+          "name": "Emily Smith",
+          "gender": "Female",
+          "birthdate": "2020-05-10"
+        },
+        {
+          "name": "Michael Smith",
+          "gender": "Male",
+          "birthdate": "2022-07-25"
+        }
+      ]
+    },
+    {
+      
+    }
+  ]
+  
