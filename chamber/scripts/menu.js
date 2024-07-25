@@ -1,9 +1,7 @@
-document.addEventListener("DOMContentLoaded", function() {
-  const hamburger = document.querySelector('#mobile-menu');
-  const menu = document.querySelector('.navbar__menu');
+const hamButton = document.querySelector('#menu');
+const navigation = document.querySelector('.navigation');
 
-  hamburger.addEventListener('click', function() {
-      menu.classList.toggle('active');
-      hamburger.classList.toggle('is-active');
-  });
+hamButton.addEventListener('click', () => {
+	navigation.classList.toggle('open');
+	hamButton.classList.toggle('open');
 });
