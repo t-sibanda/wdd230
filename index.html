@@ -6,61 +6,11 @@
   <title>Terrence Sibanda - WDD 230 - Web Frontend Development</title>
   <meta name="description" content="This webpage serves as the course assignment portal for Terrence Sibanda's WDD 230 - Web Frontend Development course.">
   <meta name="author" content="Terrence Sibanda">
+  <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/base1.css">
   <link rel="stylesheet" href="styles/larger1.css">
-  <link rel="stylesheet" href="styles/normalize.css">
-  <link rel="icon" href="favicon.ico">
-  <link rel="linkedin" href="https://www.linkedin.com/in/tsibanda">
-  <link rel="Zvishavane my home" href="https://www.facebook.com/photo/?fbid=2848363815221118&set=p.2848363815221118">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap">
-  <style>
-    /* Main styles for the page */
-    body {
-        font-family: sans-serif; 
-        margin: 0;
-        padding: 0;
-    }
-    main {
-        max-width: 960px;
-        margin: 0 auto;
-        padding: 20px;
-    }
-    /* Styles for the hero image */
-    .hero-image {
-        position: relative;
-    }
-    .hero-image img {
-        display: block;
-        width: 100%;
-        height: auto;
-    }
-    .hero-overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
-        color: white;
-        text-align: center;
-        font-size: 2em;
-        padding: 10px;
-        white-space: nowrap; /* Prevent text wrapping */
-        font-family: Ubuntu;
-        
-
-    }
-    /* Styles for the map (adjust as needed) */
-    .map-container {
-        margin-top: 20px;
-        width: 100%;
-        height: 300px; /* Adjust height as needed */
-    }
-    .map-container iframe {
-        width: 100%;
-        height: 100%;
-    }
-  </style>
+  <link rel="icon" href="favicon.ico">
 </head>
 <body>
   <header class="flex-container">
@@ -76,7 +26,6 @@
       <a href="#" title="Site Plan">Site Plan</a>
       <a href="#" title="Form">Form</a>
     </nav>
-    <script src="scripts/menu.js"></script>
   </nav>
 
   <main>
@@ -88,14 +37,13 @@
       </picture>
       <div class="hero-overlay">Belem, Brazil Temple</div>
   </section>
-  <section class="information-card">
-      </section>
   
     <h1>WDD 230: Web Frontend Development</h1>
     <div class="content-wrapper">
       <section class="card grid-container">
         <h2>Learning Activities</h2>
-        <ul class="course-list">
+        <div class="course-list">
+         <ul>
           <li>W01: <a href="week01/chamber-site-plan.html">RRDC Chamber of Commerce</a></li>
           <li>W02: <a href="week02/design.html"> Design practices</a></li>
           <li>W03:<a href="week03/bom.html"> BOM localStorage Demo</a></li>
@@ -106,14 +54,23 @@
           <li>W05:</li>
           <li>W06:</li>
           <li>W07:</li>
-        </ul>
+         </ul>
+      </div>
       </section>
       <section>
         <h2>Information</h2>
         <ul class="information-list">
-          <li>Weather: Sunny and warm</li>
           <li>Page Visits: South Bend, Indiana</li>
         </ul>
+        <section class="information-card">
+          <h2>Current Weather</h2>
+          <p>The current temperature is <span id="current-temp"></span>°F</p>
+          <p>Conditions: <span id="current-condition"></span></p>
+          <figure>
+            <img id="weather-icon" src="" alt="Weather Icon">
+            <figcaption id="icon-desc"></figcaption>
+          </figure>
+        </section>
       </section>
     </div>
     <div class="map-container">
@@ -126,20 +83,22 @@
           loading="lazy" 
           referrerpolicy="no-referrer-when-downgrade"
           aria-label="Map of My Hometown"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2607.9531820880165!2d29.99102354703387!3d-20.330977502464414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ecb6490974e210f%3A0x5d4d8be28df43004!2sZvishavane%2C%20Zimbabwe!5e1!3m2!1sen!2sus!4v1720467518814!5m2!1sen!2sus" >
-      ></iframe>
-      </div>
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2607.9531820880165!2d29.99102354703387!3d-20.330977502464414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ecb6490974e210f%3A0x5d4d8be28df43004!2sZvishavane%2C%20Zimbabwe!5e1!3m2!1sen!2sus!4v1720467518814!5m2!1sen!2sus">
+      </iframe>
+    </div>
     <section class="cta">
-      </section>
+    </section>
 
-      <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
-      <script src="scripts/vists.js"></script>
+    <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
   </main>
+  <script src="scripts/links.js"></script>
 
   <footer>
     <p>© <span id="copyrightYear"></span> Terrence Sibanda, Zimbabwe </p>
     <p id="lastModified">Last Modified: N/A</p>
   </footer>
+  <script src="scripts/menu.js"></script>
   <script src="scripts/getDates.js"></script>
+  <script src="scripts/weather.js"></script>
 </body>
 </html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chamber Directory</title>
+  <link rel="stylesheet" href="styles/base1.css">
+  <link rel="stylesheet" href="styles/larger1.css">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap">
+  <style>
+    /* Additional styles for directory page */
+    .member-card, .member-list-item {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+    }
+    .member-card img, .member-list-item img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    .toggle-button {
+      cursor: pointer;
+      margin: 20px;
+      padding: 10px 20px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+    .grid-view .member-card, .list-view .member-list-item {
+      display: flex;
+      flex-direction: column;
+    }
+  </style>
+</head>
+<body>
+  <header class="flex-container">
+        <img src="images/profile.jpg" alt="Terrence Sibanda profile" width="210" height="150">
+        <span>Terrence Sibanda</span>
+    </header>
+    
+  <nav>
+        <button id="menu"></button>
+        <nav class="navigation">
+          <a href="#" title="Home" class="active">Home</a>
+          <a href="#" title="Chamber">Chamber</a>
+          <a href="#" title="Site Plan">Site Plan</a>
+          <a href="#" title="Form">Form</a>
+        </nav>
+      </nav>
+  <main>
+    <button class="toggle-button" id="toggleView">Toggle View</button>
+    <section id="member-directory" class="grid-view">
+      <!-- Member information will be dynamically inserted here -->
+    </section>
+  </main>
+  <footer>
+    <p>© <span id="copyrightYear"></span> Terrence Sibanda, Zimbabwe </p>
+    <p id="lastModified">Last Modified: N/A</p>
+  </footer>
+  <script src="scripts/directory.js"></script>
+  <script src="scripts/menu.js"></script>
+  <script src="scripts/getDates.js"></script>
+  <script src="scripts/weather.js"></script>
+</body>
+</html>
