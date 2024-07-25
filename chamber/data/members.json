@@ -5,7 +5,7 @@
         "address": "3899, Zvishavane, Zimbabwe",
         "phone": "+263 78 417 8444",
         "website": "",
-        "image": "chamber/images/tarkeish logo.png",
+        "image": "https://t-sibanda.github.io/wdd230/chamber/images/tarkeish logo.png",
         "membershipLevel": "Silver",
         "description": "We supply chickens both off layers and broilers. We also offer green from vegetables to green mealies. Our products are satisfactory with quality and freshness as our major priority."
       },
@@ -14,7 +14,7 @@
         "address": "74 RG Mugabe Way, Zvishavane, Zimbabwe",
         "phone": "+263 71 555 5895",
         "website": "https://www.beforward.jp/beforward_zimbabwe",
-        "image": "chamber/images/be forward logo.jpg",
+        "image": "https://t-sibanda.github.io/wdd230/chamber/images/be forward logo.jpg",
         "membershipLevel": "Silver",
         "description": "We offer a Delivery Service to BE FORWARD customers who wish to receive their cars in  Tanzania, Zambia, Zimbabwe, Malawi, DRC, Burundi and Rwanda.."
       },
@@ -30,10 +30,10 @@
       },
       {
         "name": "Boltgas industrial and mining supplies",
-        "address": "Address 8",
+        "address": "105 Railway Avenue, Zvishavane.",
         "phone": "+263 242 487113-4",
         "website": "https://boltgas.com/",
-        "image": "chamber/images/boltgas.jpg",
+        "image": "https://t-sibanda.github.io/wdd230/chamber/images/boltgas.jpg",
         "membershipLevel": "Gold",
         "description": "We supply a range of customised services, equipment, components and aftermarket products to mining and industrial customers in southern Africa."
       },
@@ -42,7 +42,7 @@
         "address": "Stand 7027 Mangwandi Street, Zimbabwe",
         "phone": "",
         "website": "https://www.facebook.com/zvishavane2020/",
-        "image": "chamber/images/care international.jpg",
+        "image": "https://t-sibanda.github.io/wdd230/chamber/images/care international.jpg",
         "membershipLevel": "Gold",
         "description": "Piloting Social Protection and WASH Interventions to Keep Adolescent Girls in School in Zimbabwe is one of the main ongoing projects in CARE Zimbabwe. It aims to test an innovative pilot activity, layering Social Protection and WASH interventions targeting adolescent girls who have been disproportionately affected by coping mechanisms adopted during lockdown, to support their return to school after the several waves of school closure in Zimbabwe. "
       },
@@ -51,7 +51,7 @@
         "address": "Dadaya Road P Bag 638 Zvishavane",
         "phone": "+263 39 2354444-56",
         "website": "https://www.mimosa.co.zw/",
-        "image": "chamber/images/mimosa mine",
+        "image": "https://t-sibanda.github.io/wdd230/chamber/images/mimosa mine",
         "membershipLevel": "Gold",
         "description": "At Mimosa, people are the most important part of our business. We believe in people because we rely on our teams to deliver best in class, market leadership. We know that high level employee engagement is essential for enhanced productivity and value creation."
       },
@@ -60,7 +60,7 @@
         "address": "7 Kenilworth Road, Harare, Zimbabwe",
         "phone": "+263 24 2746614",
         "website": "https://murowadiamonds.com/",
-        "image": "chamber/images/murowa diamonds.jpeg",
+        "image": "https://t-sibanda.github.io/wdd230/chamber/images/murowa diamonds.jpeg",
         "membershipLevel": "Gold",
         "description": "RZM Murowa Mine is a 24-hour open pit mining operation. Production from Murowa began in 2004. In 2015 RioZim took over the management of Murowa at a time the company had stopped mining sighting viability issues."
       }
