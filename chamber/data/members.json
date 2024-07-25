@@ -5,7 +5,7 @@
         "address": "3899, Zvishavane, Zimbabwe",
         "phone": "+263 78 417 8444",
         "website": "",
-        "image": "https://lh3.googleusercontent.com/p/AF1QipOT8nkYDMpYx5IjVtJXAnKcci8MEnezsaYMw9AV=s1360-w1360-h1020",
+        "image": "chamber/images/tarkeish logo.png",
         "membershipLevel": "Silver",
         "description": "We supply chickens both off layers and broilers. We also offer green from vegetables to green mealies. Our products are satisfactory with quality and freshness as our major priority."
       },
@@ -14,7 +14,7 @@
         "address": "74 RG Mugabe Way, Zvishavane, Zimbabwe",
         "phone": "+263 71 555 5895",
         "website": "https://www.beforward.jp/beforward_zimbabwe",
-        "image": "https://scontent-ord5-2.xx.fbcdn.net/v/t39.30808-6/385479513_799411005523617_5350062666486915620_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=ZLdgQO7kKtMQ7kNvgEtSnnY&_nc_ht=scontent-ord5-2.xx&oh=00_AYDsQP5a-LeddIa0lyNm2-2Uuz2TythIbDoDpO4JbfZd1g&oe=66A87439",
+        "image": "chamber/images/be forward logo.jpg",
         "membershipLevel": "Silver",
         "description": "We offer a Delivery Service to BE FORWARD customers who wish to receive their cars in  Tanzania, Zambia, Zimbabwe, Malawi, DRC, Burundi and Rwanda.."
       },
@@ -24,7 +24,7 @@
         "address": "805 B, Robert Mugabe way, Zvishavane,",
         "phone": "+263 77 151 9390",
         "website": "",
-        "image": "https://lh3.googleusercontent.com/p/AF1QipO-JxtIyP0XHXUMIT1GLBcMfl9jKTWq19Ybnl5W=s1360-w1360-h1020",
+        "image": "",
         "membershipLevel": "Bronze",
         "description": "Commercial agent in Zvishavane, Zimbabwe."
       },
@@ -33,7 +33,7 @@
         "address": "Address 8",
         "phone": "+263 242 487113-4",
         "website": "https://boltgas.com/",
-        "image": "https://boltgas.com/wp-content/uploads/2021/10/welcome-1.jpg",
+        "image": "chamber/images/boltgas.jpg",
         "membershipLevel": "Gold",
         "description": "We supply a range of customised services, equipment, components and aftermarket products to mining and industrial customers in southern Africa."
       },
@@ -42,7 +42,7 @@
         "address": "Stand 7027 Mangwandi Street, Zimbabwe",
         "phone": "",
         "website": "https://www.facebook.com/zvishavane2020/",
-        "image": "https://www.care-international.org/sites/default/files/styles/media_block_tablet/public/2022-04/Zimbabwe_Woman%20standing%20in%20the%20park_RS64933_200117_ZIM_Drought_Cleo_JH_390.JPG.webp?itok=QOD_fRvI",
+        "image": "chamber/images/care international.jpg",
         "membershipLevel": "Gold",
         "description": "Piloting Social Protection and WASH Interventions to Keep Adolescent Girls in School in Zimbabwe is one of the main ongoing projects in CARE Zimbabwe. It aims to test an innovative pilot activity, layering Social Protection and WASH interventions targeting adolescent girls who have been disproportionately affected by coping mechanisms adopted during lockdown, to support their return to school after the several waves of school closure in Zimbabwe. "
       },
@@ -51,7 +51,7 @@
         "address": "Dadaya Road P Bag 638 Zvishavane",
         "phone": "+263 39 2354444-56",
         "website": "https://www.mimosa.co.zw/",
-        "image": "https://www.mimosa.co.zw/sites/mimosa-mining-corp/files/styles/laptop/public/mimosa/homepage/zero-harm-banner-image.jpg?itok=S3WsLevA",
+        "image": "chamber/images/mimosa mine",
         "membershipLevel": "Gold",
         "description": "At Mimosa, people are the most important part of our business. We believe in people because we rely on our teams to deliver best in class, market leadership. We know that high level employee engagement is essential for enhanced productivity and value creation."
       },
@@ -60,7 +60,7 @@
         "address": "7 Kenilworth Road, Harare, Zimbabwe",
         "phone": "+263 24 2746614",
         "website": "https://murowadiamonds.com/",
-        "image": "https://murowadiamonds.com/wp-content/uploads/2018/09/24b9eafc3a8315b95475dmv2.jpeg",
+        "image": "chamber/images/murowa diamonds.jpeg",
         "membershipLevel": "Gold",
         "description": "RZM Murowa Mine is a 24-hour open pit mining operation. Production from Murowa began in 2004. In 2015 RioZim took over the management of Murowa at a time the company had stopped mining sighting viability issues."
       }
