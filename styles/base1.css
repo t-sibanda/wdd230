@@ -97,9 +97,10 @@ body {
     }
     nav a {
     color : #333333;
-    text-decoration : none;
+    text-decoration : bold;
     padding : 10px 20px;
     display : inline-block;
+
     }
     @media (max-width: 768px) {
     nav {
