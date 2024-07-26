@@ -120,7 +120,22 @@ body {
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 20px;
 }
+.weather, .forecast {
+  margin-bottom: 20px;
+}
 
+#forecast-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.forecast-day {
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #fff;
+  text-align: center;
+  width: 30%;
+}
 
 /* Responsive styles */
 /* large view navigation ************************************/
